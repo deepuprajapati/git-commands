@@ -1,0 +1,100 @@
+Use git command before | (pipe) symbol, Git general command
+
+-----------------------------------------------------------
+
+pwd | (print working directory)
+
+ls  | (list of file or file in current directory)
+
+clear | (clear your screen)
+
+cd d: | (change directory)
+
+cd .. | (move back from directory/folder)
+
+mkdir "[foldername]" | (make directory/folder)
+
+touch "[filename]" | (create file with extension)
+
+rm "[filename]" | (remove/delete file)
+
+rm -rf "[foldername]" | (remove/delete folder)
+
+code "[filename]" | (open file in editor)
+
+mv "old file name" "new file name" | (chenge file name)
+
+mv "filename" ./foldername | (to move file in another folder)
+
+mv "filename" .. | (move file in back directory)
+
+cp "filename" ./foldername | (copy file to another directory)
+
+
+-----------------------------------------------------------
+GIT CONFIGURATION
+
+git config --global user.email "deepak@gmail.com"
+ 
+git init
+ 
+git add -A  | (-A for all file add) or git add [filename]
+ 
+git status
+ 
+git commit -m "your comment for file update" | (spanshot)
+ 
+git remote add origin repoNamelink | (reponame live path)
+ 
+git push origin master | (it will ask us username and password)
+ 
+git clone [path]
+ 
+git branch | (check branch status)
+ 
+git branch [newfilename] | (create new branch)
+ 
+git checkout master     | (master name or branch name)
+ 
+git merge [branch name] | (merge branch with master branch)
+ 
+git branch -d [branch name] (for delete branch)
+ 
+git branch -m [branch name] | (Update branch name)
+ 
+ 
+-----------------------------------------------------------
+
+git log (for history)
+ 
+git log -2 | (for last 2 history)
+ 
+git log --oneline | (for check all comment)
+ 
+git log --grep="write here your comment"  | (search history by comment with case sensitive)
+ 
+git log -i --grep="write here your comment"  | (search history by comment without case sensitive)
+ 
+git log --author="author name" | (Search history by author name)
+ 
+git log -i -G"your code here" | (search history by code)
+ 
+git log -i -p -G"your code here" | (search full history in all file by code) 
+
+  
+-----------------------------------------------------------
+
+ 
+Learn Stash Command :- 
+ 
+git stash save "your comment releted to your changes"
+ 
+git stash list |  (check all temporary file as stash)
+ 
+git stash apply [unique code] |  (take back your last temporary change)
+ 
+git stash pop | ???
+ 
+git stash drop [unique code] |  (delete temporary stash)
+ 
+git stash -p | (for build stash file for particular file)
